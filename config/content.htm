@@ -20,8 +20,8 @@
 <h1>progress rate</h1>
 <h2>W05</h2>
 <p>哈哈一開始完全不明白呢，莫名其妙亂記一堆，還有感謝萬同學提供的照片</p>
-<p><img caption="false" height="143" src="/images/11632284955472.jpg" width="191"/><img alt="" height="143" src="/images/11632285045035.jpg" width="191"/></p>
-<h2>W06</h2>
+<p><img alt="" height="183" src="/images/11632284955472.jpg" width="244"/><img alt="" height="177" src="/images/11632285045035.jpg" width="236"/></p>
+<p></p><h2>W06</h2>
 <p>這次記了不少，但要再整理一陣子，主要是名詞或指令不熟，但筆記稍微整理了一下。</p>
 <p>重點是稍微理解GitHub的運作了，就是打包帶著走，隨時修，隨時看，有網路了再上傳的感覺吧?</p>
 <p></p>
@@ -74,25 +74,120 @@
 <p></p>
 <h2>W10</h2>
 <p>今天主要是關於public key 和 private key 的教學</p>
+<p>*來源<a href="https://drive.google.com/file/d/1VNBHNMXS1-wG7oaKDCpG5p3khsffB7oa/view">https://drive.google.com/file/d/1VNBHNMXS1-wG7oaKDCpG5p3khsffB7oa/view</a></p>
+<p>和</p>
+<p><a href="http://mde.tw/wcmj2020/content/%E4%BB%A5%20SSH%20%E7%B6%AD%E8%AD%B7%E5%80%89%E5%84%B2.html">http://mde.tw/wcmj2020/content/%E4%BB%A5%20SSH%20%E7%B6%AD%E8%AD%B7%E5%80%89%E5%84%B2.html</a></p>
+<p>目的是我們再用start.bat指令git push上github</p>
+<p></p>
 <p>1 使用putty 創建一個key (putty 可以在 Y 槽找到((Y槽要開啟wcmj2020tool的start.bat出現))</p>
-<p>2 選擇要public 還是private</p>
-<p>3 儲存到</p>
+<p>2 選擇public</p>
+<p>3 儲存到Y槽的home</p>
 <p>3 打開黑色指令視窗</p>
 <p>4 打sh (對，只要sh)</p>
 <p><img alt="" height="258" src="/images/explorer_tlX0qgfCrJ.png" width="537"/></p>
 <p>5 打ssh-keygen -t rsa -b 4096 -c "密碼名"</p>
-<p>6 接下來會問你要不要為它設密碼，Enter就好</p>
+<p>6 接下來會問你要不要為它設保護，Enter就好</p>
 <p>7 出現Enter file in which to save the key (/y/home/.ssh/id_rsa):</p>
 <p>   打/y/keys/id_rsa</p>
-<p>   y=y槽；keys是</p>
+<p>   y=y槽；home=檔案名；.ssh=檔案名 ；<span>id_rsa=key的名字</span></p>
+<p>8 這時key已經產生了，接著我們前往key的文件檔所在(接續上面<span>/y/home/.ssh/id_rsa為例，就是.ssh)，把它丟進編輯器，再把產生的內容複製貼上到SSH keys(setting-&gt;ssh and gpg keys-&gt;new ssh key)</span></p>
+<p><span>9 現在github已經得到ssh key 了</span></p>
+<p><span><img alt="" height="284" src="/images/chrome_QeW72wPDCd.png" width="137"/></span></p>
+<p>___現在要讓start.bat認得key</p>
+<p>10 開啟<span>puttygen.exe，轉成ppk.格式，同樣儲存到home</span></p>
+<p><span>11將start.bat丟到編輯器(那個白白的，把檔案丟進去會懺聲一對程式碼或亂碼的框框，我終於知道它的名字了)，插入</span></p>
+<p><code class="js plain">set GIT_HOME=%Disk%:\portablegit\bin\</code></p>
+<p><code class="js plain">set GIT_SSH=%Disk%:\putty\plink.exe</code></p>
+<p><code class="js plain">這兩行</code></p>
+<p><span face="monospace" style="font-family: monospace;">12開啟puttygen.exe，選擇load，選擇id_rsa，選擇<span>save private key，這些動作是將剛剛轉成ppk的id_rsa存檔，成功會出現下面這個畫面</span></span></p>
+<p><span face="monospace" style="font-family: monospace;"><span><img alt="" height="277" src="/images/puttygen_pkHV9hdjQV.png" width="314"/></span></span></p>
+<p><span face="monospace" style="font-family: monospace;">13開啟putty.exe，接著<span style="color: #ff99cc;">Connection-&gt;SSH-&gt;Auth</span></span></p>
+<p><span face="monospace" style="font-family: monospace;">14<span>確定home裡的.ssh目錄中的config設定檔長這樣</span></span></p>
+<p><span face="monospace" style="font-family: monospace;"><span><img alt="" height="228" src="/images/chrome_tcYZ6PnEQ4.png" width="669"/></span></span></p>
+<div class="line number4 index3 alt1"><code class="js plain"></code>15<span> 最後再將 wcmj202的 .git目錄下的config檔案中的連線協定, <span style="color: #ff99cc;">由https改為ssh</span>連線ex:</span></div>
+<div class="line number4 index3 alt1"><span></span></div>
+<div class="line number4 index3 alt1"><span>(1)前往github的wcmj2020，點開那個能複製網址的綠色格子，再選取右上角W10</span></div>
+<div class="line number4 index3 alt1"><span>今天主要是關於public key 和 private key 的教學</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>*來源https://drive.google.com/file/d/1VNBHNMXS1-wG7oaKDCpG5p3khsffB7oa/view</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>和</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>http://mde.tw/wcmj2020/content/%E4%BB%A5%20SSH%20%E7%B6%AD%E8%AD%B7%E5%80%89%E5%84%B2.html</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>目的是我們再用start.bat指令git push上github</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>1 使用putty 創建一個key (putty 可以在 Y 槽找到((Y槽要開啟wcmj2020tool的start.bat出現))</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>2 選擇public</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>3 儲存到Y槽的home</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>3 打開黑色指令視窗</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>4 打sh (對，只要sh)</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>￼</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>5 打ssh-keygen -t rsa -b 4096 -c "密碼名"</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>6 接下來會問你要不要為它設保護，Enter就好</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>7 出現Enter file in which to save the key (/y/home/.ssh/id_rsa):</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>   打/y/keys/id_rsa</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>   y=y槽；home=檔案名；.ssh=檔案名 ；id_rsa=key的名字</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>8 這時key已經產生了，接著我們前往key的文件檔所在(接續上面/y/home/.ssh/id_rsa為例，就是.ssh)，把它丟進編輯器，再把產生的內容複製貼上到SSH keys(setting-&gt;ssh and gpg keys-&gt;new ssh key)</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>9 現在github已經得到ssh key 了</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>￼</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>___現在要讓start.bat認得key</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>10 開啟puttygen.exe，轉成ppk.格式，同樣儲存到home</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>11將start.bat丟到編輯器(那個白白的，把檔案丟進去會懺聲一對程式碼或亂碼的框框，我終於知道它的名字了)，插入</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>set GIT_HOME=%Disk%:\portablegit\bin\</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>set GIT_SSH=%Disk%:\putty\plink.exe</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>這兩行</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>12開啟puttygen.exe，選擇load，選擇id_rsa，選擇save private key，這些動作是將剛剛轉成ppk的id_rsa存檔，成功會出現下面這個畫面</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>￼</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>13開啟putty.exe，接著Connection-&gt;SSH-&gt;Auth</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>14確定home裡的.ssh目錄中的config設定檔長這樣</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>￼</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>15 最後再將 wcmj202的 .git目錄下的config檔案中的連線協定, 由https改為ssh連線ex:</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span>(1)前往github的wcmj2020，點開那個能複製網址的綠色格子，再選取右上角的use ssh，再複製</span></div>
+<div class="line number4 index3 alt1"><span></span></div>
+<div class="line number4 index3 alt1"><span>(2)丟config到編輯器</span></div>
+<div class="line number4 index3 alt1"><span></span></div>
+<div class="line number4 index3 alt1"><span>(3)把url那段改掉，如下</span></div>
+<div class="line number4 index3 alt1"><span> </span></div>
+<div class="line number4 index3 alt1"><span></span></div>
+<div class="line number4 index3 alt1"><span><img alt="" height="271" src="/images/chrome_mcaHPO6oa5.png" width="859"/></span></div>
+<div class="line number4 index3 alt1"></div>
+<p>16感動地去睡覺</p>
 <p></p>
 <p>*要出去那個彩色區域要打 <span style="color: #ff99cc;"><strong>exit</strong></span> !!</p>
 <p><span style="color: #ff99cc;">(我解鎖色彩功能了!!!)</span></p>
 <p><span style="color: #000000;">(git push 如果卡住((y/n那裏))，開putty連github.com，成功後再git push)</span></p>
 <p></p>
 <p></p>
-<p></p>
-<h1>第九週實習</h1>
+<p></p><h1>第九週實習</h1>
 <p><span></span></p>
 <h2>電腦軟硬體簡介</h2>
 <p></p>
