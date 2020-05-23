@@ -14,6 +14,7 @@ from pelicanconf import *
 
 # 將所有靜態 html 檔案移到 blog 子目錄
 SITEURL = 'https://50833102.github.io/wcmj2020/blog'
+
 # 此設定用於將資料送到 gh-pages, 因此使用絕對 URL 設定
 RELATIVE_URLS = False
 
