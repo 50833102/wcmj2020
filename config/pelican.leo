@@ -61,6 +61,8 @@
 <v t="leo.20180423103656.1"><vh>@edit 20180910.md</vh></v>
 <v t="508.20200522145010.1"><vh>@edit 50833102.md</vh></v>
 <v t="leo.20200523232905.1"><vh>@edit 50833102.01.md</vh></v>
+<v t="leo.20200529141657.1"><vh>@edit 50833102.02.md</vh></v>
+<v t="leo.20200529130803.1"><vh>newHeadline</vh></v>
 </v>
 </v>
 </v>
@@ -93,6 +95,7 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20180115115910.1"></t>
 <t tx="leo.20180115142025.1"></t>
 <t tx="leo.20180423103639.1"></t>
+<t tx="leo.20200529130803.1"></t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
