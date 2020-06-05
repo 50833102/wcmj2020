@@ -41,6 +41,14 @@
 </v>
 <v t="leo.20180115142025.1"><vh>保留之前舊的設定檔案</vh></v>
 </v>
+<v t="yen.20170224232341.2"><vh>@path theme/pelican-bootstrap3_local/templates</vh>
+<v t="yen.20170224232341.3"><vh>@edit base.html</vh></v>
+</v>
+<v t="leo.20170710015301.1"><vh>@path theme/pelican-bootstrap3/templates</vh>
+<v t="leo.20170710015311.1"><vh>@edit search.html</vh></v>
+<v t="leo.20170710095845.1"><vh>@edit base.html</vh></v>
+<v t="leo.20170710101854.1"><vh>@edit article.html</vh></v>
+</v>
 </v>
 <v t="leo.20170710015511.1"><vh>編輯 plugin</vh>
 <v t="leo.20170710015523.1"><vh>@path plugin</vh>
@@ -56,23 +64,32 @@
 </v>
 <v t="leo.20170710022054.1"><vh>可以另建節點存放 markdown 目錄下的 md 檔案</vh></v>
 <v t="leo.20170710022041.1"><vh>@path markdown</vh>
-<v t="leo.20180115115910.1"><vh>2018</vh>
-<v t="leo.20180423103639.1"><vh>2018 Fall CP 課程</vh>
-<v t="leo.20180423103656.1"><vh>@edit 20180910.md</vh></v>
-<v t="508.20200522145010.1"><vh>@edit 50833102.md</vh></v>
-<v t="leo.20200523232905.1"><vh>@edit 50833102.01.md</vh></v>
-<v t="leo.20200529141657.1"><vh>@edit 50833102.02.md</vh></v>
-<v t="leo.20200529144830.1"><vh>@edit 50833102.2.01.md</vh></v>
-<v t="leo.20200529154150.1"><vh>@edit</vh></v>
-<v t="leo.20200529130803.1"><vh>newHeadline</vh></v>
+<v t="leo.20180115115910.1"><vh>2020</vh>
+<v t="leo.20200604214958.1"><vh>@clean MYDATA2.md</vh>
+<v t="leo.20200604215030.1"><vh>227556342226589064</vh></v>
 </v>
+<v t="leo.20200604214910.1"><vh>@clean MYDATA1.md</vh>
+<v t="leo.20200604215039.1"><vh>8605136594066136969</vh></v>
+</v>
+<v t="leo.20200604222242.1"><vh>@clean 50833102-1.md</vh></v>
+<v t="leo.20200604222704.1"><vh>@clean 50833102-2.md</vh>
+<v t="leo.20200604222739.1"><vh>194215135573871341</vh></v>
+</v>
+<v t="leo.20200605133612.1"><vh>@clean 50833102-3.md</vh>
+<v t="leo.20200605140138.1"><vh>8896516423278036060</vh></v>
+</v>
+<v t="leo.20200605145658.1"><vh>@clean 50833102-4.md</vh>
+<v t="leo.20200605151650.1"><vh>2811539222985720267</vh></v>
+<v t="leo.20200605151656.1"><vh>7381265449072043855</vh></v>
+</v>
+<v t="leo.20200605152629.1"><vh>@clean 50833102-5.md</vh></v>
 </v>
 </v>
 <v t="yen.20170108171733.83"><vh>產生 .key 與 .crt 指令</vh></v>
 </v>
-<v t="leo.20200529155631.1"><vh>@button add_to_blogger</vh></v>
-<v t="leo.20200529161648.1"><vh>@button edit_to_blogger</vh></v>
-<v t="yen.20170108171930.1"><vh>@button https server</vh></v>
+<v t="yen.20170108171930.1"><vh>@button add_to_blogger</vh></v>
+<v t="leo.20200605043111.1"><vh>@button edit_to_blogger</vh></v>
+<v t="leo.20200605043055.1"><vh>@button https server</vh></v>
 <v t="yen.20170108171939.1"><vh>@button ipv6 https server</vh></v>
 </vnodes>
 <tnodes>
@@ -87,6 +104,7 @@ g.es("admin pelican Github 執行完畢")
 
 
 </t>
+<t tx="leo.20170710015301.1"></t>
 <t tx="leo.20170710015511.1"></t>
 <t tx="leo.20170710015523.1"></t>
 <t tx="leo.20170710015523.2"></t>
@@ -98,145 +116,124 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20180115093726.1"></t>
 <t tx="leo.20180115115910.1"></t>
 <t tx="leo.20180115142025.1"></t>
-<t tx="leo.20180423103639.1"></t>
-<t tx="leo.20200529130803.1"></t>
-<t tx="leo.20200529154150.1">@language md
+<t tx="leo.20200604214910.1">@language md
 ---
-Title: test5
-Date: 2020-05-29 15:48
+Title: 2019 Fall CP
+Date: 2019-09-10 11:00
 Category: Misc
-Tags: 50833102
-Slug: 50833102-5
-Author: 50833102
+Tags: 2019FallCP
+Slug: 2019-Fall-32-bit-Windows-2019
+Author: yen
 ---
 
-憑證測試
+test111222
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
+<t tx="leo.20200604214958.1">@language md
+---
+Title: 2018 Fall CP
+Date: 2020-09-10 11:00
+Category: Misc
+Tags: 2018FallCP
+Slug: 2018-Fall-32-bit-Windows-2018
+Author: yen
+---
+
+test111
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
+<t tx="leo.20200604215030.1"></t>
+<t tx="leo.20200604215039.1"></t>
+<t tx="leo.20200604222242.1">@language md
+---
+Title: 50833102-1
+Date: 2019-09-10 11:00
+Category: Misc
+Tags: 50833102-1
+Slug: 50833102-1
+Author: Hu
+---
+
+test111222xxxx
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
-
-----
-
-如題
 </t>
-<t tx="leo.20200529155631.1">@language python
-
+<t tx="leo.20200604222704.1">@language md
+---
+Title: 50833102-1
+Date: 2019-09-10 11:00
+Category: Misc
+Tags: 50833102-1
+Slug: 50833102-1
+Author: Hu
 ---
 
+test111222xxxxyyyyy
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
+<t tx="leo.20200604222739.1"></t>
+<t tx="leo.20200605043055.1">@language python
+import os
+import subprocess
+import threading
+import http.server, ssl
+
+def domake():
+    # build directory
+    os.chdir("./../")
+    server_address = ('localhost', 5443)
+    httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd.socket = ssl.wrap_socket(httpd.socket,
+                                   server_side=True,
+                                   certfile='localhost.crt',
+                                   keyfile='localhost.key',
+                                   ssl_version=ssl.PROTOCOL_TLSv1)
+    print(os.getcwd())
+    print("5443 https server started")
+    httpd.serve_forever()
+
+# 利用執行緒執行 https 伺服器
+make = threading.Thread(target=domake)
+make.start()</t>
+<t tx="leo.20200605043111.1">@language python
 from markdown import markdown
 from oauth2client import client
 from googleapiclient import sample_tools
 import os
- 
+# 配合使用 credential token
+from googleapiclient.discovery import build
+#from google_auth_oauthlib.flow import InstalledAppFlow
+#from google.auth.transport.requests import Request
+argv=""
 os.environ['TZ'] = 'Asia/Taipei'
-argv = ""
-# 認證並建立服務
-# name of the api is "blogger", version is "v3"
-# description of the api is __doc__
-# file name of the application: location of client_secrets.json
-service, flags = sample_tools.init(
-  argv, 'blogger', 'v3', __doc__, "./../../client_secrets.json",
-  scope='https://www.googleapis.com/auth/blogger')
- 
- 
-def get_cat_tag_content(data):
-    # 請注意, 因為 data 來自 .md 的檔案 內容, 第1行為 ---
-    # 用跳行符號分割
-    data_list = data.split("\n")
-    #第 2 行為 title
-    title= data_list[1]
-    #第 4 行為 category
-    category = data_list[3]
-    #第 5 行為 tags
-    tags = data_list[4]
-    # 有多項資料的 content 型別為數列
-    # 再將第 9 行之後的資料數列串回成以跳行隔開的資料
-    content = "\n".join(data_list[8:])
-    # 先將截斷摘要與內文的 pelican md 檔按符號, 換成 Blogger 的 &lt;!--more--&gt;
-    content = content.replace('&lt;!-- PELICAN_END_SUMMARY --&gt;', '&lt;!--more--&gt;')
-    # 接著若內容有 ~~~python 與 ~~~ 則換成 Wordpress 格式
-    #content = content.replace('~~~python', '[code lang="python"]')
-    #content = content.replace('~~~', '[/code]')
-    return title, category, tags, content
- 
-# 從目前所在節點的 body pan 中取出類別, tags 以及文章內容
-# p.h 為 @clean filename.md
-# 因為要使用 @clean 節點掛上為後的 blogger post_id, 因此改為讀 .md 檔案
-md_filename = p.h.split(" ")[1]
-with open(md_filename, 'r', encoding="utf-8") as content_file:
-    md_content = content_file.read()
-# title_str, category_str, tags_str, content = get_cat_tag_content(p.b)
-title_str, category_str, tags_str, content = get_cat_tag_content(md_content)
-category = category_str.split(":")[1]
-tags = tags_str.split(":")[1].split(",")
-tags.append(category)
-# title 是一個單獨的字串
-title = title_str.split(":")[1]
-# 將 markdown 格式 content 轉為 html
-content = markdown(content)
-# 以下處理 content 的 &lt;h2&gt; 標題
-content = content.replace("&lt;h2&gt;", "&lt;h2&gt;&lt;font size='4'&gt;")
-content = content.replace("&lt;/h2&gt;", "&lt;/font&gt;&lt;/h2&gt;")
-# g.es(content)
- 
-try:
-    '''
-    users = service.users()
-    # 取得使用者 profile 資料
-    user = users.get(userId='self').execute()
-    print('網誌名稱: %s' % user['displayName'])
-    '''
-    blogs = service.blogs()
-    # 取得使用者所建立網誌名稱
-    blogs = blogs.listByUser(userId='self').execute()
-    # post_id is now blogs["items"][0]["id"]
-    blog_id = blogs["items"][0]["id"]
-    #for blog in blogs['items']:
-        #print(blog['name'], blog['url'])
-    posts = service.posts()
-    # 新增網誌 post 時, 需要 post_id
-    body = {
-    "kind": "blogger#post",
-    "id": blog_id,
-    "title": title,
-    # 利用 markdown 函式, 將 .md 的內文轉為 html, 作為 Blogger 的文章內容
-    "content": content,
-    "labels": tags
-    }
-    insert = posts.insert(blogId=blog_id, body=body)
-    posts_doc = insert.execute()
-    post_id = posts_doc["id"]
-    #print(posts_doc)
-    os.remove("blogger.dat")
-    # 利用最後的 child 節點來儲存 post_id
-    to_save_post_id = p.insertAsLastChild()   
-    # 改為內文為空的節點, id 直接標在 head 標題 
-    to_save_post_id.b = ""
-    to_save_post_id.h = post_id
-    # 因為新增節點, commander 必須 redraw
-    c.redraw()
-    g.es("post_id 為", post_id)
-    g.es("已經將資料送往 Blogger!")
-except(client.AccessTokenRefreshError):
-    g.es("error")</t>
-<t tx="leo.20200529161648.1">@language python
 
----
+import pickle
+from google_auth_oauthlib.flow import InstalledAppFlow
+ 
+ 
+SCOPES = ['https://www.googleapis.com/auth/blogger', ]
+ 
+# we check if the file tBo store the credentials exists
+if not os.path.exists('./../../blogger_token.dat'):
+ 
+    flow = InstalledAppFlow.from_client_secrets_file('./../../client_secrets.json', SCOPES)
+    credentials = flow.run_local_server()
+ 
+    with open('./../../blogger_token.dat', 'wb') as credentials_dat:
+        pickle.dump(credentials, credentials_dat)
+else:
+    with open('./../../blogger_token.dat', 'rb') as credentials_dat:
+        credentials = pickle.load(credentials_dat)
+service = build('blogger', 'v3', credentials=credentials)
+g.es(service)
 
-from markdown import markdown
-from oauth2client import client
-from googleapiclient import sample_tools
-import os
- 
-os.environ['TZ'] = 'Asia/Taipei'
-argv = ""
-# 認證並建立服務
-# name of the api is "blogger", version is "v3"
-# description of the api is __doc__
-# file name of the application: location of client_secrets.json
-service, flags = sample_tools.init(
-  argv, 'blogger', 'v3', __doc__, "./../../client_secrets.json",
-  scope='https://www.googleapis.com/auth/blogger')
- 
+#with open('./../../blogger_credentials.dat', 'rb') as credentials_dat:
+ #   credentials = pickle.load(credentials_dat)
+#service,flags=sample_tools.init(
+#    argv,'blogger','v3',__doc__,"./../../client_secrets.json",
+#    scope="https://www.googleapis.com/auth/blogger")
+
+service = build('blogger', 'v3', credentials=credentials)
  
 def get_cat_tag_content(data):
     # 請注意, 因為 data 來自 .md 的檔案 內容, 第1行為 ---
@@ -297,12 +294,143 @@ try:
     # need to save postId to outline head
     update = posts.update(blogId=blog_id, postId=post_id, body=body, publish=True)
     update_doc = update.execute()
-    os.remove("blogger.dat")
+    # 使用 credential token 後, 無需刪除 blogger.dat
+    #os.remove("blogger.dat")
     g.es("post_id 為", post_id)
     g.es("已經將更新資料送往 Blogger!")
 except(client.AccessTokenRefreshError):
-    g.es("error")
-</t>
+    g.es("error")</t>
+<t tx="leo.20200605133612.1">@language md
+---
+Title: 終於開始正題了
+Date: 2020-06-05 01:39
+Category: Misc
+Tags: chapter1
+Slug: 50833102-3
+Author: Hu
+---
+
+    歷經了風雨和滄桑，我終於!終於能把文章推上Blogger了!!雖然我之前說過Blogger就只會放雜七雜八的東西，但既然現在要評分就要正經一點了ww
+
+    當然自由發會的部分我還是會盡其所能的不務正業啦 〳 ° ▾ ° 〵
+    
+    還有雖然吐槽過了，但滑鼠一點文字就不見真的很痛苦啊 இдஇ
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
+<t tx="leo.20200605140138.1"></t>
+<t tx="leo.20200605145658.1">@language md
+---
+Title:建立並且更改網誌
+Date: 2020-06-05 02:50
+Category: Misc
+Tags: chapter2, wcmj, 網誌
+Slug: 50833102-4
+Author: Hu
+---
+
+1 建立一個倉儲(公開)
+
+2 Setting中設為master branch
+
+3 clone 網址到隨身碟
+(https://127.0.0.1:9443這種，上一步產生的)
+
+*網站有了，增加內容-------
+
+4再資料夾(tmp)中建(wcmj2020)
+
+5 git clone 這個網址
+
+6 cd wcmj2020 
+
+7 git submodule add https://github.com/mdecourse/cmsimde.git cmsimde
+
+8到資料夾，找到up_dir，把內容Ctrl A到wcmj2020
+
+(第9步起就是更改網頁)
+
+9 python wsgi.py (啟動python之術!!!)
+
+10然後複製因為前一步產生的新網址，Ctrl C到古歌看看
+
+11修改後一定要記得generate page
+
+(回到cmd)
+
+12 cd..
+
+13 git add . (add和點點中間一定要記得空白)
+
+14 git commit -m "你要附註的東西"
+
+15 git push
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
+<t tx="leo.20200605151650.1"></t>
+<t tx="leo.20200605151656.1"></t>
+<t tx="leo.20200605152629.1">@language md
+---
+Title: public key 和 private key
+Date: 2020-06-05 03:28
+Category: Misc
+Tags: chapter3
+Slug: 50833102-5
+Author: Hu
+---
+
+目的是我們再用start.bat指令git push上github
+
+1 使用putty 創建一個key (putty 可以在 Y 槽找到((Y槽要開啟wcmj2020tool的start.bat出現))
+
+2 選擇public
+
+3 儲存到Y槽的home
+
+3 打開黑色指令視窗
+
+4 打sh (對，只要sh)
+
+5 打ssh-keygen -t rsa -b 4096 -c "密碼名"
+
+6 接下來會問你要不要為它設保護，Enter就好
+
+7 出現Enter file in which to save the key (/y/home/.ssh/id_rsa):
+
+   打/y/keys/id_rsa
+
+   y=y槽；home=檔案名；.ssh=檔案名 ；id_rsa=key的名字
+
+8 這時key已經產生了，接著我們前往key的文件檔所在(接續上面/y/home/.ssh/id_rsa為例，就是.ssh)，把它丟進編輯器，再把產生的內容複製貼上到SSH keys(setting-&gt;ssh and gpg keys-&gt;new ssh key)
+
+9 現在github已經得到ssh key 了
+
+---現在要讓start.bat認得key---
+
+10 開啟puttygen.exe，轉成ppk.格式，同樣儲存到home
+
+11將start.bat丟到編輯器(那個白白的，把檔案丟進去會懺聲一對程式碼或亂碼的框框，我終於知道它的名字了)，插入
+
+set GIT_HOME=%Disk%:\portablegit\bin\
+
+set GIT_SSH=%Disk%:\putty\plink.exe
+
+這兩行
+
+12開啟puttygen.exe，選擇load，選擇id_rsa，選擇save private key，這些動作是將剛剛轉成ppk的id_rsa存檔
+
+13開啟putty.exe，接著Connection-&gt;SSH-&gt;Auth
+
+14確定home裡的.ssh目錄中的內容有無錯誤
+
+15 最後再將 wcmj202的 .git目錄下的config檔案中的連線協定, 由https改為ssh連線ex:
+ 
+(1)前往github的wcmj2020，點開那個能複製網址的綠色格子，再選取右上角的use ssh，再複製
+(2)丟config到編輯器
+(3)把url那段改掉，如下
+
+16滿懷幸福，拖著疲憊的身軀，頂著沉重的腦袋，去睡吧!
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
@@ -395,28 +523,127 @@ g.es("admin pelican 近端執行完畢")
 
 </t>
 <t tx="yen.20170108171930.1">@language python
+from markdown import markdown
+from oauth2client import client
+from googleapiclient import sample_tools
 import os
-import subprocess
-import threading
-import http.server, ssl
+# 配合使用 credential token
+from googleapiclient.discovery import build
+#from google_auth_oauthlib.flow import InstalledAppFlow
+#from google.auth.transport.requests import Request
+argv=""
+os.environ['TZ'] = 'Asia/Taipei'
 
-def domake():
-    # build directory
-    os.chdir("./../")
-    server_address = ('localhost', 5443)
-    httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
-    httpd.socket = ssl.wrap_socket(httpd.socket,
-                                   server_side=True,
-                                   certfile='localhost.crt',
-                                   keyfile='localhost.key',
-                                   ssl_version=ssl.PROTOCOL_TLSv1)
-    print(os.getcwd())
-    print("5443 https server started")
-    httpd.serve_forever()
+import pickle
+from google_auth_oauthlib.flow import InstalledAppFlow
+ 
+ 
+SCOPES = ['https://www.googleapis.com/auth/blogger', ]
+ 
+# we check if the file tBo store the credentials exists
+if not os.path.exists('./../../blogger_token.dat'):
+ 
+    flow = InstalledAppFlow.from_client_secrets_file('./../../client_secrets.json', SCOPES)
+    credentials = flow.run_local_server()
+ 
+    with open('./../../blogger_token.dat', 'wb') as credentials_dat:
+        pickle.dump(credentials, credentials_dat)
+else:
+    with open('./../../blogger_token.dat', 'rb') as credentials_dat:
+        credentials = pickle.load(credentials_dat)
+service = build('blogger', 'v3', credentials=credentials)
+g.es(service)
 
-# 利用執行緒執行 https 伺服器
-make = threading.Thread(target=domake)
-make.start()</t>
+#with open('./../../blogger_credentials.dat', 'rb') as credentials_dat:
+ #   credentials = pickle.load(credentials_dat)
+#service,flags=sample_tools.init(
+#    argv,'blogger','v3',__doc__,"./../../client_secrets.json",
+#    scope="https://www.googleapis.com/auth/blogger")
+
+service = build('blogger', 'v3', credentials=credentials)
+ 
+def get_cat_tag_content(data):
+    # 請注意, 因為 data 來自 .md 的檔案 內容, 第1行為 ---
+    # 用跳行符號分割
+    data_list = data.split("\n")
+    #第 2 行為 title
+    title= data_list[1]
+    #第 4 行為 category
+    category = data_list[3]
+    #第 5 行為 tags
+    tags = data_list[4]
+    # 有多項資料的 content 型別為數列
+    # 再將第 9 行之後的資料數列串回成以跳行隔開的資料
+    content = "\n".join(data_list[8:])
+    # 先將截斷摘要與內文的 pelican md 檔按符號, 換成 Blogger 的 &lt;!--more--&gt;
+    content = content.replace('&lt;!-- PELICAN_END_SUMMARY --&gt;', '&lt;!--more--&gt;')
+    # 接著若內容有 ~~~python 與 ~~~ 則換成 Wordpress 格式
+    #content = content.replace('~~~python', '[code lang="python"]')
+    #content = content.replace('~~~', '[/code]')
+    return title, category, tags, content
+ 
+# 從目前所在節點的 body pan 中取出類別, tags 以及文章內容
+# p.h 為 @clean filename.md
+# 因為要使用 @clean 節點掛上為後的 blogger post_id, 因此改為讀 .md 檔案
+md_filename = p.h.split(" ")[1]
+with open(md_filename, 'r', encoding="utf-8") as content_file:
+    md_content = content_file.read()
+# title_str, category_str, tags_str, content = get_cat_tag_content(p.b)
+title_str, category_str, tags_str, content = get_cat_tag_content(md_content)
+category = category_str.split(":")[1]
+tags = tags_str.split(":")[1].split(",")
+tags.append(category)
+# title 是一個單獨的字串
+title = title_str.split(":")[1]
+# 將 markdown 格式 content 轉為 html
+content = markdown(content)
+# 以下處理 content 的 &lt;h2&gt; 標題
+content = content.replace("&lt;h2&gt;", "&lt;h2&gt;&lt;font size='4'&gt;")
+content = content.replace("&lt;/h2&gt;", "&lt;/font&gt;&lt;/h2&gt;")
+# g.es(content)
+ 
+try:
+    
+    users = service.users()
+    # 取得使用者 profile 資料
+    user = users.get(userId='self').execute()
+    print('網誌名稱: %s' % user['displayName'])
+    
+    print('網誌名稱: %s' % user['displayName'])
+    blogs = service.blogs()
+    # 取得使用者所建立網誌名稱
+    blogs = blogs.listByUser(userId='self').execute()
+    # post_id is now blogs["items"][0]["id"]
+    blog_id = blogs["items"][0]["id"]
+    #for blog in blogs['items']:
+        #print(blog['name'], blog['url'])
+    posts = service.posts()
+    # 新增網誌 post 時, 需要 post_id
+    body = {
+    "kind": "blogger#post",
+    "id": blog_id,
+    "title": title,
+    # 利用 markdown 函式, 將 .md 的內文轉為 html, 作為 Blogger 的文章內容
+    "content": content,
+    "labels": tags
+    }
+    insert = posts.insert(blogId=blog_id, body=body)
+    posts_doc = insert.execute()
+    post_id = posts_doc["id"]
+    #print(posts_doc)
+    # 改用 credential token 後不會產生 blogger.dat
+    #os.remove("blogger.dat")
+    # 利用最後的 child 節點來儲存 post_id
+    to_save_post_id = p.insertAsLastChild()   
+    # 改為內文為空的節點, id 直接標在 head 標題 
+    to_save_post_id.b = ""
+    to_save_post_id.h = post_id
+    # 因為新增節點, commander 必須 redraw
+    c.redraw()
+    g.es("post_id 為", post_id)
+    g.es("已經將資料送往 Blogger!")
+except(client.AccessTokenRefreshError):
+    g.es("error")</t>
 <t tx="yen.20170108171939.1">@language python
 import os
 import subprocess
@@ -446,5 +673,6 @@ def domake():
 make = threading.Thread(target=domake)
 make.start()</t>
 <t tx="yen.20170224232341.1"></t>
+<t tx="yen.20170224232341.2"></t>
 </tnodes>
 </leo_file>
