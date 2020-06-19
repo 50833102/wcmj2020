@@ -76,13 +76,16 @@
 <v t="leo.20200604222739.1"><vh>194215135573871341</vh></v>
 </v>
 <v t="leo.20200605133612.1"><vh>@clean 50833102-3.md</vh>
+<v t="leo.20200605164404.1"><vh>newHeadline</vh></v>
 <v t="leo.20200605140138.1"><vh>8896516423278036060</vh></v>
 </v>
 <v t="leo.20200605145658.1"><vh>@clean 50833102-4.md</vh>
+<v t="leo.20200605164006.1"><vh>newHeadline</vh></v>
 <v t="leo.20200605151650.1"><vh>2811539222985720267</vh></v>
-<v t="leo.20200605151656.1"><vh>7381265449072043855</vh></v>
 </v>
-<v t="leo.20200605152629.1"><vh>@clean 50833102-5.md</vh></v>
+<v t="leo.20200605152629.1"><vh>@clean 50833102-5.md</vh>
+<v t="leo.20200605153415.1"><vh>1295820475175496921</vh></v>
+</v>
 </v>
 </v>
 <v t="yen.20170108171733.83"><vh>產生 .key 與 .crt 指令</vh></v>
@@ -312,11 +315,12 @@ Author: Hu
 
     歷經了風雨和滄桑，我終於!終於能把文章推上Blogger了!!雖然我之前說過Blogger就只會放雜七雜八的東西，但既然現在要評分就要正經一點了ww
 
-    當然自由發會的部分我還是會盡其所能的不務正業啦 〳 ° ▾ ° 〵
-    
-    還有雖然吐槽過了，但滑鼠一點文字就不見真的很痛苦啊 இдஇ
+&lt;!-- PELICAN_END_SUMMARY --&gt;
 
-&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
+@others
+
+ 
+</t>
 <t tx="leo.20200605140138.1"></t>
 <t tx="leo.20200605145658.1">@language md
 ---
@@ -332,42 +336,10 @@ Author: Hu
 
 2 Setting中設為master branch
 
-3 clone 網址到隨身碟
-(https://127.0.0.1:9443這種，上一步產生的)
+&lt;!-- PELICAN_END_SUMMARY --&gt;
 
-*網站有了，增加內容-------
-
-4再資料夾(tmp)中建(wcmj2020)
-
-5 git clone 這個網址
-
-6 cd wcmj2020 
-
-7 git submodule add https://github.com/mdecourse/cmsimde.git cmsimde
-
-8到資料夾，找到up_dir，把內容Ctrl A到wcmj2020
-
-(第9步起就是更改網頁)
-
-9 python wsgi.py (啟動python之術!!!)
-
-10然後複製因為前一步產生的新網址，Ctrl C到古歌看看
-
-11修改後一定要記得generate page
-
-(回到cmd)
-
-12 cd..
-
-13 git add . (add和點點中間一定要記得空白)
-
-14 git commit -m "你要附註的東西"
-
-15 git push
-
-&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
+@others</t>
 <t tx="leo.20200605151650.1"></t>
-<t tx="leo.20200605151656.1"></t>
 <t tx="leo.20200605152629.1">@language md
 ---
 Title: public key 和 private key
@@ -428,9 +400,51 @@ set GIT_SSH=%Disk%:\putty\plink.exe
 (2)丟config到編輯器
 (3)把url那段改掉，如下
 
+" #
+
 16滿懷幸福，拖著疲憊的身軀，頂著沉重的腦袋，去睡吧!
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;</t>
+<t tx="leo.20200605153415.1"></t>
+<t tx="leo.20200605164006.1">3 clone 網址到隨身碟
+(https://127.0.0.1:9443這種，上一步產生的)
+
+*網站有了，增加內容-------
+
+4再資料夾(tmp)中建(wcmj2020)
+
+5 git clone 這個網址
+
+6 cd wcmj2020 
+
+7 git submodule add https://github.com/mdecourse/cmsimde.git cmsimde
+
+8到資料夾，找到up_dir，把內容Ctrl A到wcmj2020
+
+---------(第9步起就是更改網頁)
+
+9 python wsgi.py (啟動python之術!!!)
+
+10然後複製因為前一步產生的新網址，Ctrl C到古歌看看
+
+11修改後一定要記得generate page
+
+(回到cmd)
+
+12 cd..
+
+13 git add . (add和點點中間一定要記得空白)
+
+14 git commit -m "你要附註的東西"
+
+15 git push
+
+16 完成!!
+
+</t>
+<t tx="leo.20200605164404.1">   當然自由發會的部分我還是會盡其所能的不務正業啦 〳 ° ▾ ° 〵
+    
+    還有雖然吐槽過了，但滑鼠一點文字就不見真的很痛苦啊 இдஇ</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
