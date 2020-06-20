@@ -1,30 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>50833102 - Misc</title><link href="https://50833102.github.io/wcmj2020/blog/" rel="alternate"></link><link href="https://50833102.github.io/wcmj2020/blog/feeds/misc.atom.xml" rel="self"></link><id>https://50833102.github.io/wcmj2020/blog/</id><updated>2020-05-29T15:48:00+08:00</updated><entry><title>test5</title><link href="https://50833102.github.io/wcmj2020/blog/50833102-5.html" rel="alternate"></link><published>2020-05-29T15:48:00+08:00</published><updated>2020-05-29T15:48:00+08:00</updated><author><name>50833102</name></author><id>tag:50833102.github.io,2020-05-29:/wcmj2020/blog/50833102-5.html</id><content type="html">&lt;p&gt;憑證測試&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>50833102 - Misc</title><link href="./" rel="alternate"></link><link href=".%5Cfeeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2020-09-10T11:00:00+08:00</updated><entry><title>2018 Fall CP</title><link href=".%5C2018-Fall-32-bit-Windows-2018.html" rel="alternate"></link><published>2020-09-10T11:00:00+08:00</published><updated>2020-09-10T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:None,2020-09-10:.\2018-Fall-32-bit-Windows-2018.html</id><content type="html">&lt;p&gt;test111&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="2018FallCP"></category></entry><entry><title>testtesttest</title><link href=".%5C50833102-9.html" rel="alternate"></link><published>2020-06-20T09:30:00+08:00</published><updated>2020-06-20T09:30:00+08:00</updated><author><name>Hu</name></author><id>tag:None,2020-06-20:.\50833102-9.html</id><content type="html">&lt;p&gt;dgsdhd???&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="chapter9"></category></entry><entry><title>更改＆編輯Blogger</title><link href=".%5C50833102-8.html" rel="alternate"></link><published>2020-06-20T07:34:00+08:00</published><updated>2020-06-20T07:34:00+08:00</updated><author><name>Hu</name></author><id>tag:None,2020-06-20:.\50833102-8.html</id><summary type="html">&lt;p&gt;接續上週，但有edit功能&lt;/p&gt;
+&lt;p&gt;blogger&lt;/p&gt;
+&lt;p&gt;https://2019wcm.blogspot.com/search/label/blogger&lt;/p&gt;
+&lt;p&gt;影片&lt;/p&gt;
+&lt;p&gt;https://drive.google.com/file/d/13KBfWIMULL9fAPw-T54cExMt9GUTW4XZ/view&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;開啟編輯器預備&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打開黑黑的窗格(我還是習慣這樣叫ww)，git submodule:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;pip install google-api-python-client&lt;/p&gt;
+&lt;p&gt;pip install oauth2client&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;將下列程式碼打進編輯器:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;'''
+用來測試 Google Blogger Python API 新增文章程式&lt;/p&gt;
+&lt;p&gt;pip install google-api-python-client oauth2client&lt;/p&gt;
+&lt;p&gt;'''&lt;/p&gt;
+&lt;p&gt;import sys
+from oauth2client import client
+from googleapiclient import …&lt;/p&gt;</summary><content type="html">&lt;p&gt;接續上週，但有edit功能&lt;/p&gt;
+&lt;p&gt;blogger&lt;/p&gt;
+&lt;p&gt;https://2019wcm.blogspot.com/search/label/blogger&lt;/p&gt;
+&lt;p&gt;影片&lt;/p&gt;
+&lt;p&gt;https://drive.google.com/file/d/13KBfWIMULL9fAPw-T54cExMt9GUTW4XZ/view&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;開啟編輯器預備&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打開黑黑的窗格(我還是習慣這樣叫ww)，git submodule:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;pip install google-api-python-client&lt;/p&gt;
+&lt;p&gt;pip install oauth2client&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;將下列程式碼打進編輯器:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;'''
+用來測試 Google Blogger Python API 新增文章程式&lt;/p&gt;
+&lt;p&gt;pip install google-api-python-client oauth2client&lt;/p&gt;
+&lt;p&gt;'''&lt;/p&gt;
+&lt;p&gt;import sys
+from oauth2client import client
+from googleapiclient import sample_tools&lt;/p&gt;
+&lt;p&gt;argv = ""&lt;/p&gt;
+&lt;h1&gt;認證並建立服務&lt;/h1&gt;
+&lt;p&gt;service, flags = sample_tools.init(
+  argv, 'blogger', 'v3', &lt;strong&gt;doc&lt;/strong&gt;, './client_secrets.json',
+  scope='https://www.googleapis.com/auth/blogger')&lt;/p&gt;
+&lt;p&gt;try:
+    users = service.users()
+    # 取得使用者 profile 資料
+    user = users.get(userId='self').execute()
+    print('網誌名稱: %s' % user['displayName'])
+    blogs = service.blogs()
+    # 取得使用者所建立網誌名稱
+    blogs = blogs.listByUser(userId='self').execute()
+    for blog in blogs['items']:
+        print(blog['name'], blog['url'])
+    posts = service.posts()
+    # 新增網誌 post 時, 需要 blog id&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;body&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+&lt;span class="ss"&gt;&amp;quot;kind&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;blogger#post&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="ss"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;123&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="ss"&gt;&amp;quot;title&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;透過 Python 程式新增網誌文章1&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="ss"&gt;&amp;quot;content&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;使用 Google Blogger API 可以利用程式新增網誌文章內容1&amp;quot;&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;insert&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;posts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;insert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;blogId&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;123&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;body&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;body&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;posts_doc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;insert&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;execute&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;posts_doc&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class="s1"&gt;# 更新網誌文章時的 body&lt;/span&gt;
+&lt;span class="s1"&gt;body = {&lt;/span&gt;
+&lt;span class="s1"&gt;&amp;quot;kind&amp;quot;: &amp;quot;blogger#post&amp;quot;,&lt;/span&gt;
+&lt;span class="s1"&gt;&amp;quot;title&amp;quot;: &amp;quot;透過 Python 程式修改網誌文章2&amp;quot;,&lt;/span&gt;
+&lt;span class="s1"&gt;&amp;quot;content&amp;quot;: &amp;quot;使用 Google Blogger API 可以利用程式修改網誌文章內容. http://mde.tw/cd2019&amp;quot;&lt;/span&gt;
+&lt;span class="s1"&gt;}&lt;/span&gt;
+
+&lt;span class="s1"&gt;update = posts.update(blogId=&amp;quot;123&amp;quot;, postId=&amp;quot;456&amp;quot;, body=body, publish=True)&lt;/span&gt;
+&lt;span class="s1"&gt;update_doc = update.execute()&lt;/span&gt;
+&lt;span class="s1"&gt;print(update_doc)&lt;/span&gt;
+&lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;except(client.AccessTokenRefreshError):
+    print("error")&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在tmp存檔，名稱後面加上.py讓它認得出這python&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;將"blogid": "123",改成自己的Blogger ID&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;將"postid": "456",改成那篇文章的ID (已經被上傳的文章才有)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;依照自己要上傳還是修改，使用 #上傳網誌文章時的 body  或  #更新網誌文章時的 body&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;"'三引號是多行標註的方法"'&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;'./client_secret.json' ，client_secret.json就是上周做的憑證的檔名，./是指在同一個資料夾&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tools &amp;gt; Go&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="chapter6"></category></entry><entry><title>憑證</title><link href=".%5C50833102-7.html" rel="alternate"></link><published>2020-06-20T07:20:00+08:00</published><updated>2020-06-20T07:20:00+08:00</updated><author><name>Hu</name></author><id>tag:None,2020-06-20:.\50833102-7.html</id><content type="html">&lt;p&gt;*來源https://drive.google.com/file/d/1I5fLwnRSeDPaSdXkrartxERICHKgmD20/view&lt;/p&gt;
+&lt;p&gt;今天要透過google金鑰讓Leo上的文章能直接上傳到blogger，簡單的想就是跟上週的目的差不多，增加local和github外多了一個新的blogger按鈕&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;開啟網址console.developers.google.com&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;點擊“憑證”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;+建立憑證，再選取OAuth 用戶端 ID&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;選擇”網頁應用程式”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下載到tmp&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;憑證其實就是讓Blogger能認出你啦，下次再到近端，就可以讓Leo像W11-12一樣。直接幫我們推到自己的Blogger，至於Blogger的編輯在下一章&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="chapter5"></category></entry><entry><title>leo</title><link href=".%5C50833102-6.html" rel="alternate"></link><published>2020-06-20T07:13:00+08:00</published><updated>2020-06-20T07:13:00+08:00</updated><author><name>Hu</name></author><id>tag:None,2020-06-20:.\50833102-6.html</id><summary type="html">&lt;p&gt;*來源https://drive.google.com/file/d/1d_YpSrTdKLPKZjkHW2TNsbHRU1ePNRFl/view&lt;/p&gt;
+&lt;p&gt;這兩週的內容是連貫的，所以放一起講。&lt;/p&gt;
+&lt;p&gt;1 在指令欄進入wcmj2020，打leo&lt;/p&gt;
+&lt;p&gt;2 File &amp;gt; Open-Outline &amp;gt; config &amp;gt;pelican.leo&lt;/p&gt;
+&lt;p&gt;3 Pelican設定 &amp;gt;共用-第6和7行，改成:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;                                   &lt;span class="n"&gt;AUTHOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;50833102&amp;#39;&lt;/span&gt;
+                                   &lt;span class="n"&gt;SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;50833102&amp;#39;&lt;/span&gt;
+
+                   &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="err"&gt;遠端&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="err"&gt;第&lt;/span&gt;&lt;span class="mi"&gt;17&lt;/span&gt;&lt;span class="err"&gt;行，改成&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+
+                                   &lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://50833102.github.io/wcmj2020/blog&amp;#39;&lt;/span&gt;
+
+                   &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="err"&gt;近端&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="err"&gt;不用改&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;4 @path markdown &amp;gt; 2020 &amp;gt; 2020 WCMJ 課程 &amp;gt; @edit 20180910 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;*來源https://drive.google.com/file/d/1d_YpSrTdKLPKZjkHW2TNsbHRU1ePNRFl/view&lt;/p&gt;
+&lt;p&gt;這兩週的內容是連貫的，所以放一起講。&lt;/p&gt;
+&lt;p&gt;1 在指令欄進入wcmj2020，打leo&lt;/p&gt;
+&lt;p&gt;2 File &amp;gt; Open-Outline &amp;gt; config &amp;gt;pelican.leo&lt;/p&gt;
+&lt;p&gt;3 Pelican設定 &amp;gt;共用-第6和7行，改成:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;                                   &lt;span class="n"&gt;AUTHOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;50833102&amp;#39;&lt;/span&gt;
+                                   &lt;span class="n"&gt;SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;50833102&amp;#39;&lt;/span&gt;
+
+                   &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="err"&gt;遠端&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="err"&gt;第&lt;/span&gt;&lt;span class="mi"&gt;17&lt;/span&gt;&lt;span class="err"&gt;行，改成&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+
+                                   &lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://50833102.github.io/wcmj2020/blog&amp;#39;&lt;/span&gt;
+
+                   &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="err"&gt;近端&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="err"&gt;不用改&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;4 @path markdown &amp;gt; 2020 &amp;gt; 2020 WCMJ 課程 &amp;gt; @edit 20180910.md&lt;/p&gt;
+&lt;p&gt;5 複製前一篇文章(標準格式)，再作修改&lt;/p&gt;
+&lt;p&gt;6 點擊 local-blog 這個按鈕(如果要發佈到遠端就改成github-blog)&lt;/p&gt;
+&lt;p&gt;7 打開wcmj2020，找到http-server.py丟到編輯器，在編輯器上方的工具欄選擇Tool，再選擇Go，編輯器右邊頁面會顯示8444已啟動&lt;/p&gt;
+&lt;p&gt;8 成功的話再上傳到遠端&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="chapter4"></category></entry><entry><title>public key 和 private key</title><link href=".%5C50833102-5.html" rel="alternate"></link><published>2020-06-05T03:28:00+08:00</published><updated>2020-06-05T03:28:00+08:00</updated><author><name>Hu</name></author><id>tag:None,2020-06-05:.\50833102-5.html</id><summary type="html">&lt;p&gt;目的是我們再用start.bat指令git push上github&lt;/p&gt;
+&lt;p&gt;1 使用putty 創建一個key (putty 可以在 Y 槽找到((Y槽要開啟wcmj2020tool的start.bat出現))&lt;/p&gt;
+&lt;p&gt;2 選擇public&lt;/p&gt;
+&lt;p&gt;3 儲存到Y槽的home&lt;/p&gt;
+&lt;p&gt;3 打開黑色指令視窗&lt;/p&gt;
+&lt;p&gt;4 打sh (對，只要sh)&lt;/p&gt;
+&lt;p&gt;5 打ssh-keygen -t rsa -b 4096 -c "密碼名"&lt;/p&gt;
+&lt;p&gt;6 接下來會問你要不要為它設保護，Enter就好&lt;/p&gt;
+&lt;p&gt;7 出現Enter file in which to save the key (/y/home/.ssh/id_rsa):&lt;/p&gt;
+&lt;p&gt;打/y/keys/id_rsa …&lt;/p&gt;</summary><content type="html">&lt;p&gt;目的是我們再用start.bat指令git push上github&lt;/p&gt;
+&lt;p&gt;1 使用putty 創建一個key (putty 可以在 Y 槽找到((Y槽要開啟wcmj2020tool的start.bat出現))&lt;/p&gt;
+&lt;p&gt;2 選擇public&lt;/p&gt;
+&lt;p&gt;3 儲存到Y槽的home&lt;/p&gt;
+&lt;p&gt;3 打開黑色指令視窗&lt;/p&gt;
+&lt;p&gt;4 打sh (對，只要sh)&lt;/p&gt;
+&lt;p&gt;5 打ssh-keygen -t rsa -b 4096 -c "密碼名"&lt;/p&gt;
+&lt;p&gt;6 接下來會問你要不要為它設保護，Enter就好&lt;/p&gt;
+&lt;p&gt;7 出現Enter file in which to save the key (/y/home/.ssh/id_rsa):&lt;/p&gt;
+&lt;p&gt;打/y/keys/id_rsa&lt;/p&gt;
+&lt;p&gt;y=y槽；home=檔案名；.ssh=檔案名 ；id_rsa=key的名字&lt;/p&gt;
+&lt;p&gt;8 這時key已經產生了，接著我們前往key的文件檔所在(接續上面/y/home/.ssh/id_rsa為例，就是.ssh)，把它丟進編輯器，再把產生的內容複製貼上到SSH keys(setting-&amp;gt;ssh and gpg keys-&amp;gt;new ssh key)&lt;/p&gt;
+&lt;p&gt;9 現在github已經得到ssh key 了&lt;/p&gt;
+&lt;p&gt;---現在要讓start.bat認得key---&lt;/p&gt;
+&lt;p&gt;10 開啟puttygen.exe，轉成ppk.格式，同樣儲存到home&lt;/p&gt;
+&lt;p&gt;11將start.bat丟到編輯器(那個白白的，把檔案丟進去會懺聲一對程式碼或亂碼的框框，我終於知道它的名字了)，插入&lt;/p&gt;
+&lt;p&gt;set GIT_HOME=%Disk%:\portablegit\bin\&lt;/p&gt;
+&lt;p&gt;set GIT_SSH=%Disk%:\putty\plink.exe&lt;/p&gt;
+&lt;p&gt;這兩行&lt;/p&gt;
+&lt;p&gt;12開啟puttygen.exe，選擇load，選擇id_rsa，選擇save private key，這些動作是將剛剛轉成ppk的id_rsa存檔&lt;/p&gt;
+&lt;p&gt;13開啟putty.exe，接著Connection-&amp;gt;SSH-&amp;gt;Auth&lt;/p&gt;
+&lt;p&gt;14確定home裡的.ssh目錄中的內容有無錯誤&lt;/p&gt;
+&lt;p&gt;15 最後再將 wcmj202的 .git目錄下的config檔案中的連線協定, 由https改為ssh連線ex:&lt;/p&gt;
+&lt;p&gt;(1)前往github的wcmj2020，點開那個能複製網址的綠色格子，再選取右上角的use ssh，再複製
+(2)丟config到編輯器
+(3)把url那段改掉，如下&lt;/p&gt;
+&lt;p&gt;16滿懷幸福，拖著疲憊的身軀，頂著沉重的腦袋，去睡吧!&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="chapter3"></category></entry><entry><title>建立並且更改網誌</title><link href=".%5C50833102-4.html" rel="alternate"></link><published>2020-06-05T02:50:00+08:00</published><updated>2020-06-05T02:50:00+08:00</updated><author><name>Hu</name></author><id>tag:None,2020-06-05:.\50833102-4.html</id><summary type="html">&lt;p&gt;1 建立一個倉儲(公開)&lt;/p&gt;
+&lt;p&gt;2 Setting中設為master branch&lt;/p&gt;
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
-&lt;hr&gt;
-&lt;p&gt;如題&lt;/p&gt;</content><category term="Misc"></category><category term="50833102"></category></entry><entry><title>test3</title><link href="https://50833102.github.io/wcmj2020/blog/50833102-3.html" rel="alternate"></link><published>2020-05-29T15:01:00+08:00</published><updated>2020-05-29T15:01:00+08:00</updated><author><name>50833102</name></author><id>tag:50833102.github.io,2020-05-29:/wcmj2020/blog/50833102-3.html</id><content type="html">&lt;p&gt;終於開始寫真正的網誌了&lt;/p&gt;
+&lt;p&gt;3 clone 網址到隨身碟
+(https://127.0.0.1:9443這種，上一步產生的)&lt;/p&gt;
+&lt;p&gt;*網站有了，增加內容-------&lt;/p&gt;
+&lt;p&gt;4再資料夾(tmp)中建(wcmj2020)&lt;/p&gt;
+&lt;p&gt;5 git clone 這個網址&lt;/p&gt;
+&lt;p&gt;6 cd wcmj2020 &lt;/p&gt;
+&lt;p&gt;7 git submodule add https://github.com/mdecourse/cmsimde.git cmsimde&lt;/p&gt;
+&lt;p&gt;8到資料夾，找到up_dir，把內容Ctrl A到wcmj2020&lt;/p&gt;
+&lt;p&gt;---------(第9步起就是更改網頁)&lt;/p&gt;
+&lt;p&gt;9 python wsgi.py (啟動python之術 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;1 建立一個倉儲(公開)&lt;/p&gt;
+&lt;p&gt;2 Setting中設為master branch&lt;/p&gt;
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
-&lt;hr&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;嗯嗯，用&lt;/span&gt;&lt;span class="n"&gt;leo寫東西超可怕的&lt;/span&gt;&lt;span class="err"&gt;，我有打完一段就用滑鼠點一下螢幕的習慣，結果就變成打一句一不小心就失去一句&lt;/span&gt;&lt;span class="n"&gt;QQ&lt;/span&gt;
+&lt;p&gt;3 clone 網址到隨身碟
+(https://127.0.0.1:9443這種，上一步產生的)&lt;/p&gt;
+&lt;p&gt;*網站有了，增加內容-------&lt;/p&gt;
+&lt;p&gt;4再資料夾(tmp)中建(wcmj2020)&lt;/p&gt;
+&lt;p&gt;5 git clone 這個網址&lt;/p&gt;
+&lt;p&gt;6 cd wcmj2020 &lt;/p&gt;
+&lt;p&gt;7 git submodule add https://github.com/mdecourse/cmsimde.git cmsimde&lt;/p&gt;
+&lt;p&gt;8到資料夾，找到up_dir，把內容Ctrl A到wcmj2020&lt;/p&gt;
+&lt;p&gt;---------(第9步起就是更改網頁)&lt;/p&gt;
+&lt;p&gt;9 python wsgi.py (啟動python之術!!!)&lt;/p&gt;
+&lt;p&gt;10然後複製因為前一步產生的新網址，Ctrl C到古歌看看&lt;/p&gt;
+&lt;p&gt;11修改後一定要記得generate page&lt;/p&gt;
+&lt;p&gt;(回到cmd)&lt;/p&gt;
+&lt;p&gt;12 cd..&lt;/p&gt;
+&lt;p&gt;13 git add . (add和點點中間一定要記得空白)&lt;/p&gt;
+&lt;p&gt;14 git commit -m "你要附註的東西"&lt;/p&gt;
+&lt;p&gt;15 git push&lt;/p&gt;
+&lt;p&gt;16 完成!!!!&lt;/p&gt;</content><category term="Misc"></category><category term="chapter2"></category><category term="wcmj"></category><category term="網誌"></category></entry><entry><title>終於開始正題了</title><link href=".%5C50833102-3.html" rel="alternate"></link><published>2020-06-05T01:39:00+08:00</published><updated>2020-06-05T01:39:00+08:00</updated><author><name>Hu</name></author><id>tag:None,2020-06-05:.\50833102-3.html</id><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;歷經了風雨和滄桑，我終於!終於能把文章推上Blogger了!!雖然我之前說過Blogger就只會放雜七雜八的東西，但既然現在要評分就要正經一點了ww&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;span class="err"&gt;不過說是網誌，但大部分的內容還是在&lt;/span&gt;&lt;span class="n"&gt;github的網頁&lt;/span&gt;&lt;span class="err"&gt;，這邊還不確定是以後要把所有內容都丟過來&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;會是項大工程&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="err"&gt;，還是只挑幾個重點，也許這裡能比&lt;/span&gt;&lt;span class="n"&gt;github網頁更隨興一點&lt;/span&gt;&lt;span class="err"&gt;，能&lt;/span&gt;&lt;span class="n"&gt;po心得碎念之類的東西&lt;/span&gt;&lt;span class="err"&gt;。&lt;/span&gt;
 
-&lt;span class="err"&gt;以上是我在這個網站上的第一篇碎碎念文，下面是我&lt;/span&gt;&lt;span class="n"&gt;github網站的網址&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Misc"></category><category term="50833102"></category></entry><entry><title>test4</title><link href="https://50833102.github.io/wcmj2020/blog/50833102-4.html" rel="alternate"></link><published>2020-05-29T15:01:00+08:00</published><updated>2020-05-29T15:01:00+08:00</updated><author><name>50833102</name></author><id>tag:50833102.github.io,2020-05-29:/wcmj2020/blog/50833102-4.html</id><content type="html">&lt;p&gt;終於開始寫真正的網誌了&lt;/p&gt;
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;嗯嗯，用&lt;/span&gt;&lt;span class="n"&gt;leo寫東西超可怕的&lt;/span&gt;&lt;span class="err"&gt;，我有打完一段就用滑鼠點一下螢幕的習慣，結果就變成打一句一不小心就失去一句&lt;/span&gt;&lt;span class="n"&gt;QQ&lt;/span&gt;
-
-&lt;span class="err"&gt;不過說是網誌，但大部分的內容還是在&lt;/span&gt;&lt;span class="n"&gt;github的網頁&lt;/span&gt;&lt;span class="err"&gt;，這邊還不確定是以後要把所有內容都丟過來&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;會是項大工程&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="err"&gt;，還是只挑幾個重點，也許這裡能比&lt;/span&gt;&lt;span class="n"&gt;github網頁更隨興一點&lt;/span&gt;&lt;span class="err"&gt;，能&lt;/span&gt;&lt;span class="n"&gt;po心得碎念之類的東西&lt;/span&gt;&lt;span class="err"&gt;。&lt;/span&gt;
-
-&lt;span class="err"&gt;以上是我在這個網站上的第一篇碎碎念文，下面是我&lt;/span&gt;&lt;span class="n"&gt;github網站的網址&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Misc"></category><category term="50833102"></category></entry><entry><title>test3</title><link href="https://50833102.github.io/wcmj2020/blog/50833102-3.html" rel="alternate"></link><published>2020-05-29T14:23:00+08:00</published><updated>2020-05-29T14:23:00+08:00</updated><author><name>50833102</name></author><id>tag:50833102.github.io,2020-05-29:/wcmj2020/blog/50833102-3.html</id><content type="html">&lt;p&gt;測試，測試，測試!!&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="50833102"></category></entry><entry><title>test2</title><link href="https://50833102.github.io/wcmj2020/blog/50833102-2.html" rel="alternate"></link><published>2020-05-23T21:00:00+08:00</published><updated>2020-05-23T21:00:00+08:00</updated><author><name>50833102</name></author><id>tag:50833102.github.io,2020-05-23:/wcmj2020/blog/50833102-2.html</id><content type="html">&lt;p&gt;依舊是測試&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="50833102"></category></entry><entry><title>50833102</title><link href="https://50833102.github.io/wcmj2020/blog/50833102-1.html" rel="alternate"></link><published>2020-05-22T00:00:00+08:00</published><updated>2020-05-22T00:00:00+08:00</updated><author><name>50833102</name></author><id>tag:50833102.github.io,2020-05-22:/wcmj2020/blog/50833102-1.html</id><content type="html">&lt;p&gt;test
-&lt;img src="moon.png" style="zoom:70%" /&gt;&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="50833102"></category></entry><entry><title>2018 Fall CP 課程</title><link href="https://50833102.github.io/wcmj2020/blog/2018-Fall-32-bit-Windows.html" rel="alternate"></link><published>2018-09-10T11:00:00+08:00</published><updated>2018-09-10T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:50833102.github.io,2018-09-10:/wcmj2020/blog/2018-Fall-32-bit-Windows.html</id><content type="html">&lt;p&gt;2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo Editor、PyQt5、flask、Markdown、pelican 與 bs4 的安裝, 也都沒有問題. 只有 Eric6 因為缺少必要模組與 Python 3.7.0 對應的 pyqt5-tools, 因此沒有安裝.&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;h2&gt;電腦規格&lt;/h2&gt;</content><category term="Misc"></category><category term="2018FallCP"></category></entry></feed>
+&lt;p&gt;當然自由發會的部分我還是會盡其所能的不務正業啦 〳 ° ▾ ° 〵&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;還有雖然吐槽過了，但滑鼠一點文字就不見真的很痛苦啊 இдஇ&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Misc"></category><category term="chapter1"></category></entry><entry><title>2019 Fall CP</title><link href=".%5C2019-Fall-32-bit-Windows-2019.html" rel="alternate"></link><published>2019-09-10T11:00:00+08:00</published><updated>2019-09-10T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:None,2019-09-10:.\2019-Fall-32-bit-Windows-2019.html</id><content type="html">&lt;p&gt;test111222&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="2019FallCP"></category></entry><entry><title>50833102-1</title><link href=".%5C50833102-1.html" rel="alternate"></link><published>2019-09-10T11:00:00+08:00</published><updated>2019-09-10T11:00:00+08:00</updated><author><name>Hu</name></author><id>tag:None,2019-09-10:.\50833102-1.html</id><content type="html">&lt;p&gt;test111222xxxx&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="50833102-1"></category></entry><entry><title>50833102-1</title><link href=".%5C50833102-1.html" rel="alternate"></link><published>2019-09-10T11:00:00+08:00</published><updated>2019-09-10T11:00:00+08:00</updated><author><name>Hu</name></author><id>tag:None,2019-09-10:.\50833102-1.html</id><content type="html">&lt;p&gt;test111222xxxxyyyyy&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;</content><category term="Misc"></category><category term="50833102-1"></category></entry></feed>

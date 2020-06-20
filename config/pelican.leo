@@ -83,16 +83,13 @@
 <v t="leo.20200605164006.1"><vh>newHeadline</vh></v>
 <v t="leo.20200605151650.1"><vh>2811539222985720267</vh></v>
 </v>
-<v t="leo.20200605152629.1"><vh>@clean 50833102-5.md</vh>
-<v t="leo.20200620071156.1"><vh>5591912030944069088</vh></v>
-</v>
-<v t="leo.20200619231235.1"><vh>@clean 50833102-6.md</vh>
-<v t="leo.20200619231709.1"><vh>5616264335938651432</vh></v>
-</v>
+<v t="leo.20200605152629.1"><vh>@clean 50833102-5.md</vh></v>
+<v t="leo.20200619231235.1"><vh>@clean 50833102-6.md</vh></v>
 <v t="leo.20200619232357.1"><vh>@clean 50833102-7.md</vh>
 <v t="leo.20200619233330.1"><vh>3684706627757311938</vh></v>
 </v>
 <v t="leo.20200619233415.1"><vh>@clean 50833102-8.md</vh></v>
+<v t="leo.20200620093305.1"><vh>@clean 50833102-9.md</vh></v>
 <v t="leo.20200620065914.1"><vh>newHeadline</vh></v>
 </v>
 </v>
@@ -449,7 +446,8 @@ set GIT_SSH=%Disk%:\putty\plink.exe
 
 15 git push
 
-16 完成!!
+16 完成!!!!
+
 
 </t>
 <t tx="leo.20200605164404.1">   當然自由發會的部分我還是會盡其所能的不務正業啦 〳 ° ▾ ° 〵
@@ -494,8 +492,8 @@ Author: Hu
 8 成功的話再上傳到遠端
 
 
-&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
-<t tx="leo.20200619231709.1"></t>
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+</t>
 <t tx="leo.20200619232357.1">@language md
 ---
 Title: 憑證
@@ -631,7 +629,19 @@ except(client.AccessTokenRefreshError):
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;</t>
 <t tx="leo.20200620065914.1"></t>
-<t tx="leo.20200620071156.1"></t>
+<t tx="leo.20200620093305.1">@language md
+---
+Title: testtesttest
+Date: 2020-06-20 09:30
+Category: Misc
+Tags: chapter9
+Slug: 50833102-9
+Author: Hu
+---
+dgsdhd???
+
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
