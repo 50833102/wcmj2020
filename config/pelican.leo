@@ -84,8 +84,16 @@
 <v t="leo.20200605151650.1"><vh>2811539222985720267</vh></v>
 </v>
 <v t="leo.20200605152629.1"><vh>@clean 50833102-5.md</vh>
-<v t="leo.20200605153415.1"><vh>1295820475175496921</vh></v>
+<v t="leo.20200620071156.1"><vh>5591912030944069088</vh></v>
 </v>
+<v t="leo.20200619231235.1"><vh>@clean 50833102-6.md</vh>
+<v t="leo.20200619231709.1"><vh>5616264335938651432</vh></v>
+</v>
+<v t="leo.20200619232357.1"><vh>@clean 50833102-7.md</vh>
+<v t="leo.20200619233330.1"><vh>3684706627757311938</vh></v>
+</v>
+<v t="leo.20200619233415.1"><vh>@clean 50833102-8.md</vh></v>
+<v t="leo.20200620065914.1"><vh>newHeadline</vh></v>
 </v>
 </v>
 <v t="yen.20170108171733.83"><vh>產生 .key 與 .crt 指令</vh></v>
@@ -400,12 +408,14 @@ set GIT_SSH=%Disk%:\putty\plink.exe
 (2)丟config到編輯器
 (3)把url那段改掉，如下
 
-" #
-
 16滿懷幸福，拖著疲憊的身軀，頂著沉重的腦袋，去睡吧!
 
-&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
-<t tx="leo.20200605153415.1"></t>
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+
+
+</t>
 <t tx="leo.20200605164006.1">3 clone 網址到隨身碟
 (https://127.0.0.1:9443這種，上一步產生的)
 
@@ -445,6 +455,183 @@ set GIT_SSH=%Disk%:\putty\plink.exe
 <t tx="leo.20200605164404.1">   當然自由發會的部分我還是會盡其所能的不務正業啦 〳 ° ▾ ° 〵
     
     還有雖然吐槽過了，但滑鼠一點文字就不見真的很痛苦啊 இдஇ</t>
+<t tx="leo.20200619231235.1">@language md
+---
+Title: leo
+Date: 2020-06-20 07:13
+Category: Misc
+Tags: chapter4
+Slug: 50833102-6
+Author: Hu
+---
+*來源https://drive.google.com/file/d/1d_YpSrTdKLPKZjkHW2TNsbHRU1ePNRFl/view
+
+這兩週的內容是連貫的，所以放一起講。
+
+1 在指令欄進入wcmj2020，打leo
+
+2 File &gt; Open-Outline &gt; config &gt;pelican.leo
+
+3 Pelican設定 &gt;共用-第6和7行，改成:
+
+                                       AUTHOR = '50833102'
+                                       SITENAME = '50833102'
+
+                       &gt;遠端-第17行，改成:
+
+                                       SITEURL = 'https://50833102.github.io/wcmj2020/blog'
+
+                       &gt;近端-不用改
+
+4 @path markdown &gt; 2020 &gt; 2020 WCMJ 課程 &gt; @edit 20180910.md
+
+5 複製前一篇文章(標準格式)，再作修改
+
+6 點擊 local-blog 這個按鈕(如果要發佈到遠端就改成github-blog)
+
+7 打開wcmj2020，找到http-server.py丟到編輯器，在編輯器上方的工具欄選擇Tool，再選擇Go，編輯器右邊頁面會顯示8444已啟動
+
+8 成功的話再上傳到遠端
+
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
+<t tx="leo.20200619231709.1"></t>
+<t tx="leo.20200619232357.1">@language md
+---
+Title: 憑證
+Date: 2020-06-20 07:20
+Category: Misc
+Tags: chapter5
+Slug: 50833102-7
+Author: Hu
+---
+*來源https://drive.google.com/file/d/1I5fLwnRSeDPaSdXkrartxERICHKgmD20/view
+
+今天要透過google金鑰讓Leo上的文章能直接上傳到blogger，簡單的想就是跟上週的目的差不多，增加local和github外多了一個新的blogger按鈕
+
+1. 開啟網址console.developers.google.com
+
+2. 點擊“憑證”
+
+3. +建立憑證，再選取OAuth 用戶端 ID
+
+4. 選擇”網頁應用程式”
+
+5. 下載到tmp
+
+
+
+憑證其實就是讓Blogger能認出你啦，下次再到近端，就可以讓Leo像W11-12一樣。直接幫我們推到自己的Blogger，至於Blogger的編輯在下一章
+
+
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
+<t tx="leo.20200619233330.1"></t>
+<t tx="leo.20200619233415.1">@language md
+---
+Title: 更改＆編輯Blogger
+Date: 2020-06-20 07:34
+Category: Misc
+Tags: chapter6
+Slug: 50833102-8
+Author: Hu
+---
+接續上週，但有edit功能
+
+blogger
+
+https://2019wcm.blogspot.com/search/label/blogger
+
+影片
+
+https://drive.google.com/file/d/13KBfWIMULL9fAPw-T54cExMt9GUTW4XZ/view
+
+1. 開啟編輯器預備
+
+2. 打開黑黑的窗格(我還是習慣這樣叫ww)，git submodule:
+
+pip install google-api-python-client
+
+pip install oauth2client
+
+
+3. 將下列程式碼打進編輯器:
+
+'''
+用來測試 Google Blogger Python API 新增文章程式
+ 
+pip install google-api-python-client oauth2client
+ 
+'''
+ 
+import sys
+from oauth2client import client
+from googleapiclient import sample_tools
+ 
+argv = ""
+# 認證並建立服務
+service, flags = sample_tools.init(
+  argv, 'blogger', 'v3', __doc__, './client_secrets.json',
+  scope='https://www.googleapis.com/auth/blogger')
+ 
+try:
+    users = service.users()
+    # 取得使用者 profile 資料
+    user = users.get(userId='self').execute()
+    print('網誌名稱: %s' % user['displayName'])
+    blogs = service.blogs()
+    # 取得使用者所建立網誌名稱
+    blogs = blogs.listByUser(userId='self').execute()
+    for blog in blogs['items']:
+        print(blog['name'], blog['url'])
+    posts = service.posts()
+    # 新增網誌 post 時, 需要 blog id
+ 
+    body = {
+    "kind": "blogger#post",
+    "id": "123",
+    "title": "透過 Python 程式新增網誌文章1",
+    "content":"使用 Google Blogger API 可以利用程式新增網誌文章內容1"
+    }
+     
+    insert = posts.insert(blogId='123', body=body)
+    posts_doc = insert.execute()
+    print(posts_doc)
+     
+    '''
+    # 更新網誌文章時的 body
+    body = {
+    "kind": "blogger#post",
+    "title": "透過 Python 程式修改網誌文章2",
+    "content": "使用 Google Blogger API 可以利用程式修改網誌文章內容. http://mde.tw/cd2019"
+    }
+     
+    update = posts.update(blogId="123", postId="456", body=body, publish=True)
+    update_doc = update.execute()
+    print(update_doc)
+    '''
+except(client.AccessTokenRefreshError):
+    print("error")
+    
+    
+4. 在tmp存檔，名稱後面加上.py讓它認得出這python
+
+5. 將"blogid": "123",改成自己的Blogger ID
+
+6. 將"postid": "456",改成那篇文章的ID (已經被上傳的文章才有)
+
+7. 依照自己要上傳還是修改，使用 #上傳網誌文章時的 body  或  #更新網誌文章時的 body
+
+"'三引號是多行標註的方法"'
+
+8. './client_secret.json' ，client_secret.json就是上周做的憑證的檔名，./是指在同一個資料夾
+
+8. Tools &gt; Go
+
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;</t>
+<t tx="leo.20200620065914.1"></t>
+<t tx="leo.20200620071156.1"></t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
